@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<img src="icons/icon48.png">
+<b>GPT 4 Chat</b>
+
+
+
+<p>Supported messengers:</p>
+<ul>
+    <li><a href="https://discord.gg/88fQT5Bgfe">Discord</a></li>
+    <li><a href="https://www.reddit.com/r/GPT4Chat/">Reddit</a></li>
+    <li><a href="https://t.me/replypal">Telegram</a></li>
+    <li><a href="https://www.messenger.com/">Messenger</a></li>
+    <li><a href="https://web.whatsapp.com/">WhatsApp</a></li>
+    <li><a href="https://mail.google.com/">Gmail</a></li>
+    <li><a href="https://twitter.com/">Twitter</a></li>
+</ul>
+<select id="gpt-version" aria-label="GPT Version"></select><br>
+<label for="language-select">Language:</label>
+<select id="language-select">
+    <option value="">Default</option>
+</select><br>
+<label for="template-select">Template:</label>
+<select id="template-select" name="template-selector"></select><br>
+
+<div id="menu-item" style="display:none;">
+
+    Developer mode:
+    <label class="switch">
+        <input type="checkbox" id="writeLog">
+        Write Log
+    </label>
+</div>
+<div id="dynamic-settings"></div>
+
+<script src="popup.js"></script>
+</body>
+</html>
